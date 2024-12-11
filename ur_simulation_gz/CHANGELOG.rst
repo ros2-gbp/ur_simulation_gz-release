@@ -2,23 +2,22 @@
 Changelog for package ur_simulation_gz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.1.0 (2024-12-10)
+0.1.0 (2024-12-11)
 ------------------
-* Update README.md with correct example script (`#67 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/67>`_)
-* Use sjtc and generate /clock topic (`#58 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/58>`_)
-* Add a ground plane to the gz URDF (`#61 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/61>`_)
-* Contributors: Felix Exner
+* Start gz bridge for clock topic (`#60 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/60>`_)
+* Contributors: Felix Exner (fexner)
 
-2.0.0 (2024-09-05)
+0.0.2 (2024-09-05)
 ------------------
-* Integration tests (`#17 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/17>`_)
-* GZ Migration Notes (`#42 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/42>`_)
-* Add documentation (`#35 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/35>`_)
-* Add world_file as launch argument (`#36 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/36>`_)
-* Added absolute path for controllers file (`#34 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/34>`_)
-* Correct launchfiles to use tf_prefix URDF argument, and ros_gz_sim package name. (`#13 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/13>`_)
-* Migrating to absolute paths (`#32 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/32>`_)
-* Update for new ur_moveit_config  (`#31 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/31>`_)
-* Fix multi-line strings in DeclareLaunchArgument (`#18 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/18>`_)
-* Update to current ROS rolling and rename things from ignition to gz. (`#7 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/7>`_)
-* Contributors: Felix Exner, Matthijs van der Burgh, Ruddick Lawrence, Vincenzo Di Pentima
+* Integration tests on Humble (backport of `#17 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/17>`_)
+* Update ci_status page with correct link and badges for semi-binary builds (backport `#46 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/46>`_)
+* Replace IfElseSubstitution with IfCondition UnlessCondition (`#44 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/44>`_)
+* Adding more launch arguments (backport of `#37 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/37>`_)
+* Add an if-condition to RViz delay (`#28 <https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation/issues/28>`_)
+* Fix regression in package.xml
+* Update maintainer information
+* Added missing exec dependency
+* Added ur20 and ur30
+* Updated CI
+* Renamed ignition to gz
+* Contributors: Felix Exner, Vincenzo Di Pentima, Iris Xu
