@@ -1,0 +1,12 @@
+Source: ros-rolling-ur-simulation-gz
+Section: misc
+Priority: optional
+Maintainer: Felix Exner <exner@fzi.de>
+Build-Depends: debhelper (>= 9.0.0), liburdfdom-tools <!nocheck>, ros-rolling-ament-cmake, ros-rolling-ament-cmake-pytest <!nocheck>, ros-rolling-launch-testing-ament-cmake <!nocheck>, ros-rolling-launch-testing-ros <!nocheck>, ros-rolling-xacro <!nocheck>, ros-rolling-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-ur-simulation-gz
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-gz-ros2-control, ros-rolling-joint-state-publisher, ros-rolling-launch, ros-rolling-launch-ros, ros-rolling-ros-gz-bridge, ros-rolling-ros-gz-sim, ros-rolling-rviz2, ros-rolling-ur-controllers, ros-rolling-ur-description, ros-rolling-ur-moveit-config, ros-rolling-urdf, ros-rolling-xacro, ros-rolling-ros-workspace
+Description: Example and configuration files for Gazebo simulation of UR manipulators.
