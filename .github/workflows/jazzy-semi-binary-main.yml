@@ -1,14 +1,14 @@
-name: Humble Binary Main
+name: Jazzy Semi Binary Main
 on:
   workflow_dispatch:
     branches:
-      - humble
+      - ros2
   pull_request:
     branches:
-      - humble
+      - ros2
   push:
     branches:
-      - humble
+      - ros2
   schedule:
     - cron: '13 4 * * *'
 
@@ -16,6 +16,7 @@ jobs:
   binary:
     uses: ./.github/workflows/reusable_ici.yml
     with:
-      ros_distro: humble
+      ros_distro: jazzy
       ros_repo: main
-      ref_for_scheduled_build: humble
+      ref_for_scheduled_build: ros2
+      upstream_workspace: ur_simulation_gz.jazzy.repos
