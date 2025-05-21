@@ -1,21 +1,19 @@
-name: Iron Binary Main
+name: Kilted Binary Main
 on:
   workflow_dispatch:
-    branches:
-      - iron
   pull_request:
     branches:
-      - iron
+      - ros2
   push:
     branches:
-      - iron
+      - ros2
   schedule:
     - cron: '13 4 * * *'
 
 jobs:
-  binary:
+  kilted_binary_main:
     uses: ./.github/workflows/reusable_ici.yml
     with:
-      ros_distro: iron
+      ros_distro: kilted
       ros_repo: main
-      ref_for_scheduled_build: iron
+      ref_for_scheduled_build: ros2
