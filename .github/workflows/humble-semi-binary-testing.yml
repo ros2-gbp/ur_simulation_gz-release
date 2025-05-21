@@ -18,5 +18,4 @@ jobs:
     with:
       ros_distro: humble
       ros_repo: testing
-      ref_for_scheduled_build: humble
       upstream_workspace: ur_simulation_gz.humble.repos
