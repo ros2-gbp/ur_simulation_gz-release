@@ -1,0 +1,12 @@
+Source: ros-humble-ur-simulation-gz
+Section: misc
+Priority: optional
+Maintainer: Felix Exner <feex@universal-robots.com>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-ament-cmake-pytest <!nocheck>, ros-humble-launch-testing-ament-cmake <!nocheck>, ros-humble-launch-testing-ros <!nocheck>, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-ur-simulation-gz
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-ign-ros2-control, ros-humble-joint-state-publisher, ros-humble-launch, ros-humble-launch-ros, ros-humble-ros-gz-bridge, ros-humble-ros-gz-sim, ros-humble-rviz2, ros-humble-ur-controllers, ros-humble-ur-description, ros-humble-ur-moveit-config, ros-humble-urdf, ros-humble-xacro, ros-humble-ros-workspace
+Description: Example and configuration files for Gazebo simulation of UR manipulators.
