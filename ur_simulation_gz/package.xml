@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>ur_simulation_gz</name>
-  <version>2.6.0</version>
+  <version>3.0.0</version>
   <description>Example and configuration files for Gazebo simulation of UR manipulators.</description>
 
   <author>Lovro Ivanov</author>
@@ -20,8 +20,11 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <exec_depend>forward_command_controller</exec_depend>
   <exec_depend>gz_ros2_control</exec_depend>
   <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>joint_state_broadcaster</exec_depend>
+  <exec_depend>joint_trajectory_controller</exec_depend>
   <exec_depend>launch</exec_depend>
   <exec_depend>launch_ros</exec_depend>
   <exec_depend>ros_gz_bridge</exec_depend>
