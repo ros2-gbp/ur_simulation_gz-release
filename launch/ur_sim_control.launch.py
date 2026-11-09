@@ -46,6 +46,7 @@ from launch.substitutions import (
     IfElseSubstitution,
 )
 from launch_ros.actions import Node
+from launch_ros.parameter_descriptions import ParameterFile
 from launch_ros.substitutions import FindPackageShare
 
 
@@ -132,11 +133,17 @@ def launch_setup(context, *args, **kwargs):
         package="controller_manager",
         executable="spawner",
         arguments=[initial_joint_controller, "-c", "/controller_manager"],
+        parameters=[
+            ParameterFile(controllers_file, allow_substs=True),
+        ],
         condition=IfCondition(activate_joint_controller),
     )
     initial_joint_controller_spawner_stopped = Node(
         package="controller_manager",
         executable="spawner",
+        parameters=[
+            ParameterFile(controllers_file, allow_substs=True),
+        ],
         arguments=[initial_joint_controller, "-c", "/controller_manager", "--stopped"],
         condition=UnlessCondition(activate_joint_controller),
     )
@@ -215,6 +222,9 @@ def generate_launch_description():
                 "ur18",
                 "ur20",
                 "ur30",
+                "ur10g-1750",
+                "ur17g-1300",
+                "ur18g-950",
             ],
             default_value="ur5e",
         )
@@ -269,7 +279,7 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             "initial_joint_controller",
-            default_value="scaled_joint_trajectory_controller",
+            default_value="joint_trajectory_controller",
             description="Robot controller to start.",
         )
     )
