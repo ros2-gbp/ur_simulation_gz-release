@@ -1,3 +1,26 @@
+## ur_simulation_gz (lyrical) - 3.0.0-1
+
+The packages in the `ur_simulation_gz` repository were released into the `lyrical` distro by running `/home/feex/.local/bin/bloom-release ur_simulation_gz --rosdistro lyrical --edit` on `Mon, 09 Nov 2026 14:33:49 -0000`
+
+The `ur_simulation_gz` package was released.
+
+Version of package(s) in repository `ur_simulation_gz`:
+
+- upstream repository: https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation.git
+- release repository: https://github.com/ros2-gbp/ur_simulation_gz-release.git
+- rosdistro version: `2.5.0-3`
+- old version: `2.5.0-3`
+- new version: `3.0.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.4`
+- catkin_pkg version: `1.1.1`
+- rosdep version: `0.27.0`
+- rosdistro version: `1.1.0`
+- vcstools version: `0.1.42`
+
+
 ## ur_simulation_gz (kilted) - 2.6.0-1
 
 The packages in the `ur_simulation_gz` repository were released into the `kilted` distro by running `/home/feex/.local/bin/bloom-release ur_simulation_gz --rosdistro kilted --edit` on `Mon, 09 Nov 2026 14:27:46 -0000`
